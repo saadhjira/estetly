@@ -1,0 +1,40 @@
+.sidebar {
+    background-color: #fff;
+    align-self: stretch;
+    display: flex;
+    min-width: 44px;
+    flex-direction: column;
+    justify-content: start;
+    width: 284px;
+    padding: 16px 32px;
+    border: 2px solid #f2f2f2;
+  }
+
+  .sidebarSecond {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  
+  .sidebarNav {
+    display: flex;
+    width: 100%;
+    max-width: 220px;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .divider {
+    border-color: #242223;
+    min-height: 0;
+    margin-top: 24px;
+    max-width: 100%;
+    width: 220px;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      padding: 16px 3px;
+      width: 47px;
+      border: none;
+    }
+  }

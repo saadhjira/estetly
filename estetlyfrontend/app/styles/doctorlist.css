@@ -1,0 +1,276 @@
+.profileContainer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .doctorInfo {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    align-items: center;
+    gap: 24px;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: auto 0;
+  }
+
+  .verifiedTag {
+    position: absolute;
+    margin: 111px 0px 0px 61px !important;
+  }
+
+  .notVerifiedTag {
+    position: absolute;
+    margin: 111px 0px 0px 50px !important;
+  }
+
+  .notVerifiedTag.usernameTag{
+    color: red !important;
+    border: 1px solid red;
+  }
+  
+  @media (max-width: 768px) {
+    .doctorImage {
+        width: 90px !important;
+    }
+    .textInfo {
+        width: 200px !important;
+    }
+    .doctorName {
+        font-size: 12px !important;
+    }
+    .specialty {
+        font: 400 10px Jost, sans-serif !important;
+        width: 200px !important;
+    }
+    .specialtyInfo {
+        width: 100% !important;
+        align-items: flex-start !important;
+    }
+    .doctorInfo {
+        margin: 0 57px;
+
+    }
+    .address {
+        display: none;
+    }
+    .buttonContainer {
+        flex-direction: row !important;
+        justify-content: start !important;
+    }
+    .actionButton:last-child {
+        margin-top: 0px !important;
+    }
+    .verifiedTag {
+        margin: 71px 0px 0px 22px !important;
+    }
+    .notVerifiedTag {
+        margin: 71px 0px 0px 10px !important;
+    }
+  }
+  
+  .doctorImage {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 130px;
+    border-radius: 10px 0;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  .textInfo {
+    align-self: stretch;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: auto 0;
+  }
+  
+  .nameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: Josefin Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .doctorName {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .usernameTag {
+    border-radius: 40px;
+    background-color: #fff;
+    display: flex;
+    margin-top: 16px;
+    min-height: 16px;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: #3d99c7;
+    font-weight: 700;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 0 8px;
+    border: 1px solid #3d99c7;
+  }
+  
+  @media (max-width: 768px) {
+    .usernameTag {
+      white-space: initial;
+      margin-top: 8px;
+    }
+
+    .price, .buttonContainer {
+      margin-top: 8px !important;
+    }
+  }
+  
+  .specialty {
+    color: #000;
+    letter-spacing: 2.8px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 8px;
+    font: 400 14px Jost, sans-serif;
+    width: 370px;
+  }
+  
+  .ratingContainer {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    gap: 10px;
+    justify-content: start;
+  }
+  
+  .starRating {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: start;
+    margin: auto 0;
+  }
+  
+  .starIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 8px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  .halfStarIcon {
+    aspect-ratio: 1.12;
+    object-fit: contain;
+    object-position: center;
+    width: 9px;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  .ratingText {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    justify-content: start;
+    margin: auto 0;
+    font: 12px Roboto, sans-serif;
+  }
+  
+  .ratingScore {
+    color: #000;
+    font-weight: 400;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  .reviewCount {
+    color: #777;
+    font-weight: 300;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  .address {
+    color: #242223;
+    letter-spacing: 0.6px;
+    align-self: stretch;
+    margin-top: 8px;
+    font: 300 12px Jost, sans-serif;
+  }
+  
+  .specialtyInfo {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 110px;
+    margin: auto 0;
+  }
+  
+  .specialtyLabel {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #8d8d8d;
+    justify-content: start;
+    font: 400 12px Jost, sans-serif;
+  }
+  
+  .specialtyIcon {
+    aspect-ratio: 1.06;
+    object-fit: contain;
+    object-position: center;
+    width: 17px;
+    border-radius: 0;
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  .specialtyText {
+    align-self: stretch;
+    margin: auto 0;
+  }
+  
+  .price {
+    color: #000;
+    text-align: center;
+    margin-top: 16px;
+    font: 600 12px Jost, sans-serif;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    margin-top: 16px;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .actionButton {
+    aspect-ratio: 5.49;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+  }
+  
+  .actionButton:last-child {
+    margin-top: 8px;
+  }

@@ -1,0 +1,703 @@
+.mySpacePage {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .doctorInfoMainPage {
+    display: flex;
+    width: 100%;
+    max-width: 1368px;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 33px 20px;
+  }
+
+.mainPage {
+    display: flex;
+    width: 100%;
+    max-width: 1368px;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 33px 20px;
+}
+  
+  .header {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 33px 50px;
+  }
+
+  .logoPhone {
+    display: none;
+  }
+  
+  .logo {
+    letter-spacing: 8.64px;
+    text-transform: uppercase;
+    font: 16px TAN - PEARL, sans-serif;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px 48px;
+    letter-spacing: 2.4px;
+    font: 12px Josefin Sans, sans-serif;
+  }
+  
+  .backButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .backIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .pageTitle {
+    color: #242223;
+    letter-spacing: 4.8px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 10;
+    margin-top: -16px;
+    font: 400 24px Forum, sans-serif;
+  }
+  
+  .separator {
+    box-shadow: 0 1px 2px rgba(141, 141, 141, 0.25);
+    width: 100%;
+    margin-top: 33px;
+    border: 1px solid #fff;
+  }
+  
+  .currentDate {
+    display: block;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    background-color: #fff;
+    color: #242223;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    padding: 4px 10px 6px;
+    font: 400 12px Josefin Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+
+  .doctordetailMainPage {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .userProfile {
+    display: flex;
+    margin-top: 31px;
+    align-items: center;
+    gap: 24px;
+    font-family: Josefin Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  .profileImage {
+    width: 130px;
+    height: 130px;
+    border-radius: 8% 0px;
+    object-fit: cover;
+  }
+  
+  .userName {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .userHandle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 40px;
+    background-color: #fff;
+    color: #155340;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0 8px;
+    border: 1px solid #155340;
+    margin-top: 16px;
+    width: 88px;
+  }
+  
+  .mainContainer {
+    display: flex;
+    width: 100%;
+    max-width: 1340px;
+    gap: 40px;
+    margin-top: 31px;
+  }
+  
+  .sidebar {
+    width: 284px;
+    background-color: #fff;
+    padding: 16px 32px;
+    border: 2px solid #f2f2f2;
+  }
+  
+  .sidebarNav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .navItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: 400 18px Josefin Sans, -apple-system, Roboto, Helvetica, sans-serif;
+    color: #000;
+    text-align: left;
+    padding: 8px;
+    border-radius: 40px;
+  }
+  
+  .navItem.active {
+    background-color: #f2f2f2;
+  }
+  
+  .navIcon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .mainContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .topSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .subscriptionPlan {
+    display: flex;
+    flex-direction: column;
+    font-family: Jost, sans-serif;
+  }
+  
+  .planLabel {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2.8px;
+  }
+  
+  .planType {
+    border-radius: 4px;
+    background-color: #fff;
+    color: #155340;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    padding: 10px 35px;
+    border: 1px solid #155340;
+    margin-top: 5px;
+  }
+  
+  .specialization {
+    text-align: center;
+  }
+  
+  .specializationTitle {
+    color: #000;
+    letter-spacing: 2.8px;
+    text-align: center;
+    text-transform: uppercase;
+    font: 400 14px Jost, sans-serif;
+  }
+  
+  .languages {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .languagesTitle {
+    color: #000;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    font: 400 12px Jost, sans-serif;
+  }
+  
+  .languageIcons {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .languageIcon {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .contactInfo {
+    background-color: #f2f2f2;
+    padding: 12px;
+    font-family: Jost, sans-serif;
+  }
+  
+  .contactTitle {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .contactList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 12px;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #8e8e8e;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  
+  .contactIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .directMessaging {
+    background-color: #242223;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 5px 16px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .infoCards {
+    display: flex;
+    gap: 34px;
+  }
+  
+  .infoCard {
+    background-color: #fff;
+    box-shadow: -5px 4px 8px #f2f2f2;
+    padding: 16px;
+    width: 302px;
+  }
+  
+  .infoCardTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font: 400 20px Forum, sans-serif;
+  }
+  
+  .expandIcon {
+    width: 9px;
+    height: 4px;
+  }
+  
+  .infoCardContent {
+    color: #242223;
+    letter-spacing: 0.7px;
+    margin-top: 8px;
+    font: 300 14px Jost, sans-serif;
+  }
+  
+  .achievements {
+    background-color: #fff;
+    box-shadow: -5px 4px 8px #f2f2f2;
+    padding: 16px;
+  }
+  
+  .achievementsTitle {
+    color: #000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font: 400 20px Forum, sans-serif;
+  }
+  
+  .achievementsList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .achievementItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .achievementNumber {
+    background-color: #155340;
+    color: #fff;
+    font-weight: 600;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  .achievementText {
+    color: #8d8d8d;
+    font: 400 14px Jost, sans-serif;
+  }
+  
+  .reputation {
+    background-color: #fff;
+    box-shadow: -5px 4px 8px #f2f2f2;
+    display: flex;
+    padding: 16px;
+    gap: 40px;
+  }
+  
+  .overallRating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 162px;
+  }
+  
+  .ratingImage {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .ratingLabel {
+    color: #8d8d8d;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    font: 400 14px Jost, sans-serif;
+    margin-top: 8px;
+  }
+  
+  .reputationDetails {
+    flex-grow: 1;
+  }
+  
+  .reputationTitle {
+    color: #000;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    font: 400 18px Forum, sans-serif;
+  }
+  
+  .reputationStats {
+    display: flex;
+    gap: 48px;
+    margin-top: 16px;
+  }
+  
+  .statItem {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .statLabel {
+    color: #8d8d8d;
+    font: 500 14px Jost, sans-serif;
+  }
+  
+  .statValue {
+    color: #155340;
+    font: 700 18px Roboto, sans-serif;
+    margin-top: 12px;
+  }
+  
+  .reviewRequestButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(21, 83, 64, 0.8);
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    font: 400 14px Jost, sans-serif;
+    padding: 5px 16px;
+    cursor: pointer;
+    margin-top: 16px;
+  }
+  
+  .reviewIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .manageButton {
+    align-self: flex-end;
+    border-radius: 4px;
+    background-color: #242223;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font: 400 14px Jost, sans-serif;
+    cursor: pointer;
+  }
+  
+  .officeInfo {
+    width: 352px;
+    background-color: #fff;
+    box-shadow: -5px 4px 8px #f2f2f2;
+    padding: 16px;
+  }
+  
+  .officeTitle {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #000;
+    letter-spacing: 0.9px;
+    font: 600 18px Jost, sans-serif;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #8d8d8d;
+  }
+  
+  .officeIcon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .officeContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+  }
+  
+  .officeCount {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .countNumber {
+    background-color: #155340;
+    color: #fff;
+    font-weight: 600;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  .countLabel {
+    color: #8d8d8d;
+    font: 400 14px Jost, sans-serif;
+  }
+  
+  .currentOffice {
+    background-color: rgba(242, 242, 242, 0.5);
+    padding: 8px;
+    margin-top: 24px;
+  }
+  
+  .currentOfficeTitle {
+    color: #242223;
+    font: 500 16px Jost, sans-serif;
+    text-align: center;
+  }
+  
+  .officeDetails {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  
+  .officeImages {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .officeExterior {
+    width: 84px;
+    height: 63px;
+    object-fit: cover;
+  }
+  
+  .officeLogo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .officeMap {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+  }
+  
+  .officeAddress {
+    color: #242223;
+    text-align: right;
+    letter-spacing: 0.6px;
+    font: 300 12px Jost, sans-serif;
+    margin-top: 8px;
+  }
+  
+  .paymentMethods {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+  }
+  
+  .paymentTitle {
+    color: #242223;
+    font: 500 14px Jost, sans-serif;
+  }
+  
+  .paymentIcons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .paymentIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .header,
+    .mainContainer {
+      max-width: 100%;
+    }
+
+    .header {
+      padding: 24px 25px;
+    }
+
+    .mySpace, .navigation, .logo, .DateDisplay,
+    .subscriptionPlan, .directMessaging {
+        display: none !important;
+    }
+
+    .logoPhone {
+        display: flex;
+    }
+  
+    .navigation,
+    .backButton {
+      white-space: initial;
+    }
+  
+    .sidebar {
+      padding: 0 20px;
+    }
+  
+    .planType {
+      white-space: initial;
+      padding: 0 20px;
+    }
+  
+    .infoCards,
+    .reputation {
+      flex-direction: column;
+    }
+  
+    .infoCard,
+    .achievements,
+    .reputation {
+      width: 100%;
+    }
+
+    .contactList {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .contactInfo{
+      background-color: #fff;
+      width: 100%;
+      padding: 12px 42px;
+    }
+
+    .doctorInfoMainPage {
+      justify-content: center !important;
+      padding-top: 0;
+    }
+
+    .languages {
+      justify-content: left;
+    }
+
+    .doctordetailMainPage {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+      padding: 0px 40px;
+    }
+
+    .profileImage {
+      width: 60px;
+      height: 60px;
+    }
+
+    .userName {
+      color: #000;
+      font-size: 12px;
+    }
+
+    .specializationTitle {
+      text-align: left;
+      text-transform: uppercase;
+      font: 400 11px Jost, sans-serif;
+      font-weight: bold;
+    }
+
+    .languagesTitle {
+      font: 400 10px Jost, sans-serif;
+      font-weight: bold;
+    }
+
+    .mainPage {
+      flex-wrap: nowrap;
+      padding: 0;
+    }
+
+    .mainPageDivider {
+      display: none;
+    }
+  }

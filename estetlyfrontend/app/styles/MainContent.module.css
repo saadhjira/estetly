@@ -1,0 +1,26 @@
+.mainContent {
+    display: flex;
+    min-width: 240px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 638px;
+  }
+  
+  .infoCardContainer {
+    display: flex;
+    align-items: start;
+    gap: 34px;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 768px) {
+    .mainContent {
+      max-width: 100%;
+    }
+  
+    .infoCardContainer {
+      margin-top: 220px !important;
+    }
+  }

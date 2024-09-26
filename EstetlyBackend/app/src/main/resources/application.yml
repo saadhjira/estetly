@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://sadjira:lO8Le74zqVgeMdfb@mongodb.uuld5.mongodb.net/?retryWrites=true&w=majority&appName=mongoDB
+      database: sample_mflix

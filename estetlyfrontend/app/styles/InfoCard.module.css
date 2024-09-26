@@ -1,0 +1,51 @@
+.infoCard {
+    background-color: #fff;
+    box-shadow: -5px 4px 8px #f2f2f2;
+    display: flex;
+    min-width: 240px;
+    flex-direction: column;
+    justify-content: start;
+    width: 302px;
+    padding: 16px;
+  }
+  
+  .cardHeader {
+    display: flex;
+    max-width: 100%;
+    width: 270px;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font: 400 20px Forum, sans-serif;
+  }
+  
+  .cardTitle {
+    margin: 0;
+  }
+  
+  .expandIcon {
+    width: 9px;
+    height: 4px;
+    object-fit: contain;
+  }
+  
+  .cardContent {
+    color: #242223;
+    letter-spacing: 0.7px;
+    margin-top: 8px;
+    font: 300 14px Jost, sans-serif;
+  }
+  
+  @media (max-width: 768px) {
+    .cardHeader {
+      white-space: initial;
+    }
+
+    .infoCard {
+        box-shadow: none;
+        padding: 16px 40px 16px 16px;
+        width: 100%;
+    }
+  }

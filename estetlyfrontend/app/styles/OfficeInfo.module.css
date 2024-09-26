@@ -1,0 +1,203 @@
+.officeInfo {
+    display: flex;
+    min-width: 240px;
+    flex-direction: column;
+    justify-content: start;
+    width: 352px;
+  }
+  
+  .officeHeader {
+    background-color: #fff;
+    box-shadow: -5px 4px 8px #f2f2f2;
+    display: flex;
+    width: 100%;
+    max-width: 352px;
+    align-items: center;
+    gap: 24px;
+    color: #000;
+    letter-spacing: 0.9px;
+    padding: 16px;
+    border-bottom: 1px solid #8d8d8d;
+    font: 600 18px Jost, sans-serif;
+  }
+  
+  .officeIcon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+  }
+  
+  .officeTitle {
+    margin: 0;
+  }
+  
+  .officeContent {
+    display: flex;
+    margin-top: 12px;
+    width: 100%;
+    max-width: 320px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+  
+  .officeStats {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .statNumber {
+    background-color: #155340;
+    color: #fff;
+    font: 600 14px Roboto, sans-serif;
+    padding: 4px 8px;
+  }
+  
+  .statLabel {
+    color: #8d8d8d;
+    font: 400 14px Jost, sans-serif;
+  }
+  
+  .chevronIcon {
+    width: 9px;
+    height: 9px;
+    object-fit: contain;
+  }
+  
+  .manageButton {
+    border-radius: 4px;
+    background-color: #242223;
+    color: #fff;
+    font: 400 14px Jost, sans-serif;
+    letter-spacing: 1.4px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .currentOffice {
+    background-color: rgba(242, 242, 242, 0.5);
+    display: flex;
+    width: 100%;
+    max-width: 288px;
+    flex-direction: column;
+    justify-content: start;
+    padding: 8px;
+    margin-top: 24px;
+  }
+  
+  .currentOfficeTitle {
+    display: flex;
+    width: 100%;
+    align-items: end;
+    gap: 8px;
+    color: #8d8d8d;
+    justify-content: center;
+    font: 600 16px Jost, sans-serif;
+    margin: 0 0 16px;
+  }
+  
+  .officeName {
+    color: #242223;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+  }
+  
+  .officeDetails {
+    display: flex;
+    gap: 8px;
+    justify-content: start;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  .officeImages {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    width: 84px;
+  }
+  
+  .officeExterior {
+    width: 84px;
+    aspect-ratio: 1.33;
+    object-fit: contain;
+  }
+  
+  .officeLogo {
+    width: 50px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    margin-top: 8px;
+  }
+  
+  .officeMap {
+    width: 180px;
+    aspect-ratio: 1.29;
+    object-fit: contain;
+  }
+  
+  .officeAddress {
+    margin-top: 8px;
+    min-height: 25px;
+    width: 100%;
+    color: #242223;
+    text-align: right;
+    letter-spacing: 0.6px;
+    font: 300 12px Jost, sans-serif;
+    font-style: normal;
+  }
+  
+  .paymentMethods {
+    display: flex;
+    margin-top: 8px;
+    width: 100%;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .paymentLabel {
+    color: #242223;
+    font: 500 14px Jost, sans-serif;
+  }
+  
+  .paymentIcons {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    justify-content: start;
+  }
+  
+  .paymentIcon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 768px) {
+    .officeInfo {
+      width: 60%;
+      position: absolute;
+      left: 60px;
+    }
+
+    .officeHeader {
+      box-shadow: none;
+      font-size: 16px;
+      justify-content: center;
+    }
+
+    .officeDetails {
+      display: none;
+    }
+
+    .officeContent{
+      display: none;
+    }
+
+    .currentOffice {
+      margin-top: 12px;
+    }
+  }

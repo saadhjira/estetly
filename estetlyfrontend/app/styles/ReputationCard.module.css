@@ -1,0 +1,117 @@
+.reputationCard {
+    background-color: #fff;
+    box-shadow: -5px 4px 8px #f2f2f2;
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    max-width: 638px;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+  
+  .overallRating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #8d8d8d;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    font: 400 14px Jost, sans-serif;
+    width: 162px;
+  }
+  
+  .avatar {
+    width: 100%;
+    border-radius: 100px;
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+  
+  .reputationDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    flex-basis: 0%;
+    padding: 16px 16px 16px 0;
+  }
+  
+  .reputationTitle {
+    color: #000;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    font: 400 18px Forum, sans-serif;
+    margin: 0 0 16px;
+  }
+  
+  .statsContainer {
+    display: flex;
+    gap: 40px 70px;
+    justify-content: space-between;
+  }
+  
+  .statItem {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .statLabel {
+    color: #8d8d8d;
+    font: 500 14px Jost, sans-serif;
+  }
+  
+  .statValue {
+    color: #155340;
+    font: 700 18px Roboto, sans-serif;
+    margin-top: 12px;
+  }
+  
+  .reviewRequestButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(21, 83, 64, 0.8);
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    font: 400 14px Jost, sans-serif;
+    padding: 5px 16px;
+    margin-top: 49px;
+    cursor: pointer;
+  }
+  
+  .buttonIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .manageButton {
+    align-self: flex-end;
+    border-radius: 4px;
+    background-color: #242223;
+    color: #fff;
+    font: 400 14px Jost, sans-serif;
+    letter-spacing: 1.4px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .reputationCard {
+      max-width: 100%;
+      box-shadow: none;
+    }
+  
+    .reputationDetails {
+      max-width: 100%;
+    }
+  
+    .reviewRequestButton {
+      margin-top: 40px;
+    }
+  }

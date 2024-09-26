@@ -1,0 +1,72 @@
+.statisticsContainer {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    text-transform: uppercase;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .statisticsWrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    aspect-ratio: 1;
+    width: 100%;
+    align-items: flex-start;
+    gap: 4px;
+    max-width: 211px;
+    padding: 47px 30px 47px 15px;
+  }
+  
+  .backgroundImage {
+    position: absolute;
+    inset: 0;
+    height: 204px;
+    width: 204px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .statisticItem {
+    position: relative;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    flex: 1;
+  }
+  
+  .statisticPercentage {
+    font: 700 28px Josefin Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .statisticLabel {
+    text-align: center;
+    margin-top: 10px;
+    font: 600 14px Jost, sans-serif;
+  }
+  
+  .verifiedStatistic {
+    align-self: end;
+    color: #fff;
+    white-space: nowrap;
+  }
+  
+  .verifiedPercentage {
+    font: 700 32px Josefin Sans, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }

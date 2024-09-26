@@ -1,0 +1,22 @@
+.dateDisplay {
+    align-self: stretch;
+    border-radius: 0 0 8px 8px;
+    color: #242223;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    padding: 4px 10px 6px;
+    font: 400 12px 'Josefin Sans', -apple-system, Roboto, Helvetica, sans-serif;
+    box-shadow: inset #00000021 0px -2px 8px 0px;
+  }
+
+.displayDateMainPage {
+    text-align: center !important;
+    margin-top: -5px;
+}
+
+@media (max-width: 768px) {
+    .displayDateMainPage {
+        display: none;
+    }
+}
